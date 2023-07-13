@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Image, Dimensions, Text } from 'react-native';
+import { StyleSheet, View, Image, Text } from 'react-native';
 
 function Card(){
     return(
@@ -14,25 +14,26 @@ function Card(){
 
 const styles = StyleSheet.create({
     container:{
-        padding: 16,
+        padding: 18,
     },
     imagen:{
         width:300, 
         height:300,
-        borderTopLeftRadius: 30,
-        borderTopRightRadius: 30,       
+        borderTopLeftRadius: 40,
+        borderTopRightRadius: 40,       
     },
     txtContain:{
         alignItems: 'center',
         backgroundColor:"green",
         borderColor:"black",
-        borderBottomLeftRadius: 30,
-        borderBottomRightRadius: 30,        
+        borderBottomLeftRadius: 40,
+        borderBottomRightRadius: 40,        
     },
         txt:{
         fontSize: 20,
+        color:"white",
         fontWeight: 'bold', 
-        marginBottom: 8,
+        marginBottom: 10,
     }
     }
 );

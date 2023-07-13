@@ -1,8 +1,8 @@
 {
-  "expoServerPort": 19000,
+  "expoServerPort": null,
   "packagerPort": 19000,
   "expoServerNgrokUrl": "https://ux-c4j.anonymous.tp-5-imagenes-en-rn-expo.exp.direct",
   "packagerNgrokUrl": "https://ux-c4j.anonymous.tp-5-imagenes-en-rn-expo.exp.direct",
-  "ngrokPid": 17332,
-  "webpackServerPort": null
+  "ngrokPid": 7596,
+  "webpackServerPort": 19006
 }
