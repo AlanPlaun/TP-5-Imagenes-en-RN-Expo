@@ -1,37 +1,40 @@
 import React from 'react';
 import { StyleSheet, View, Image, Dimensions, Text } from 'react-native';
-import { Card } from 'react-native-elements';
 
-function makeCard(){
-
+function Card(){
     return(
-        <View>
-        <Card title="Cafe" style={styles.card}>
-            <Image
-                style={styles.image}
-                source={require("./imgs/coffee1.jpeg")}
-            />
-            <Text style={styles.text}>Mocha</Text>
-        </Card>
-        </View>
+        <View style={styles.container} >
+                    <Image source={require('../imgs/coffee1.jpeg')} style={styles.imagen}/>
+                <View style={styles.txtContain}>
+                    <Text style={styles.txt}>Mocha</Text>
+                </View >
+            </View>
     );
 };
 
 const styles = StyleSheet.create({
-    card: {
-        flex: 1,
-        backgroundColor: '#fff',
+    container:{
+        padding: 16,
+    },
+    imagen:{
+        width:300, 
+        height:300,
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,       
+    },
+    txtContain:{
         alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor:"green",
+        borderColor:"black",
+        borderBottomLeftRadius: 30,
+        borderBottomRightRadius: 30,        
     },
-    image: {
-        width: 400,
-        height: 150,
-        marginBottom: 15
-    },
-    text: {
-        
+        txt:{
+        fontSize: 20,
+        fontWeight: 'bold', 
+        marginBottom: 8,
     }
-});
+    }
+);
 
-export default makeCard();
+export {Card}

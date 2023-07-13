@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import Card from './Componentes/Card';
-
+import { Card } from './Componentes/Card';
  export default function App() {
   return (
     <View style={styles.container}>
@@ -11,7 +10,6 @@ import Card from './Componentes/Card';
         />
       <Text style={styles.texto}>Proba nuestro cafe</Text>
       <Card/>
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -24,8 +22,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   logo: {
-    width: 400,
-    height: 150,
+    width: 270,
+    height: 104,
     marginBottom: 15
   },
   texto:{
